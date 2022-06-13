@@ -1,0 +1,21 @@
+@import "../../sass_utilities/variables";
+
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid $grey;
+  ul {
+    margin-left: auto;
+    li {
+      margin: 10px 20px;
+      display: inline-block;
+      a {
+        color: $grey;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

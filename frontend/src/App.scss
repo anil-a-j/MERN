@@ -1,0 +1,201 @@
+//variables import
+@import "./sass_utilities/variables";
+//font import
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.App {
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.form {
+  .form-group {
+    margin-bottom: 30px;
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    input {
+      display: block;
+      padding: 12px 10px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 3px;
+      width: 100%;
+      border: 1px solid $grey;
+    }
+    select {
+      padding: 12px 8px;
+      border: 1px solid $grey;
+      border-radius: 3px;
+      width: 100%;
+      &:focus-visible {
+        outline: 0px;
+      }
+    }
+  }
+}
+
+.credentials {
+  width: 400px;
+  margin-top: 100px;
+  padding: 30px 50px 80px 50px;
+  .submit-btn {
+    margin-top: 65px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn {
+  border: none;
+  padding: 15px 28px;
+  border-radius: 3px;
+  border: 1px solid $blue;
+  color: $black;
+}
+
+.submit-btn {
+  background-color: $blue;
+  color: $white !important;
+}
+
+.display-block-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px 5px $light-grey;
+}
+
+.shadow-dark {
+  box-shadow: 0px 0px 10px 5px $transparent-black;
+}
+
+.text-small {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.text-medium {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-danger {
+  color: $red;
+}
+
+.text-success {
+  color: $green;
+}
+
+.container {
+  width: 80%;
+  display: block;
+  margin: 10px auto;
+}
+
+.add-candidate {
+  margin: 10px 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.table {
+  margin-top: 50px;
+  .table-head,
+  .table-row {
+    display: flex;
+    padding: 10px 0;
+    div {
+      width: 20%;
+    }
+    .count,
+    .edit {
+      width: 10%;
+      color: $blue;
+      a {
+        margin: 0 10px;
+      }
+    }
+  }
+  .table-head {
+    margin-bottom: 20px;
+    p {
+      color: $grey;
+    }
+  }
+  .table-row {
+    select {
+      border: none;
+      background-color: transparent;
+      width: 60%;
+      margin-left: 10%;
+      text-align: center;
+      &:focus-visible {
+        outline: 0px;
+      }
+    }
+  }
+  .table-row:nth-child(even) {
+    background-color: $light-blue;
+  }
+}

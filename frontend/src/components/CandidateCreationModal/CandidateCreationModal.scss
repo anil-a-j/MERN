@@ -1,0 +1,28 @@
+@import "../../sass_utilities/variables";
+
+.candidate-modal {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  align-items: center;
+  background-color: $transparent-black;
+  .modal-box {
+    background-color: $white;
+    width: 80%;
+    height: fit-content;
+    padding: 30px 50px;
+    .form {
+      .column {
+        width: 45%;
+      }
+      .d-flex:nth-child(2) {
+        margin-top: 30px;
+      }
+    }
+  }
+  .submit-btn {
+    margin-left: 25px;
+  }
+}
